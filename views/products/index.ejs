@@ -14,9 +14,14 @@
         <% products.forEach(product=> { %>
             <li>
                 <%= product.name %>
+                    <a href="products/<%= product.id %> ">Details</a>
             </li>
             <% }) %>
+
     </ul>
+
+    <a href="products/new">Add New Product</a>
+
 </body>
 
 </html>
