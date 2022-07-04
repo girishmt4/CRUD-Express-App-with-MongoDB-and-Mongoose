@@ -19,7 +19,9 @@
             Price : $<%= foundProduct.price %>
         </li>
         <li>
-            Category : <%= foundProduct.category %>
+            Category : <a href="/products?category=<%= foundProduct.category %>">
+                <%= foundProduct.category %>
+            </a>
         </li>
     </ul>
 
